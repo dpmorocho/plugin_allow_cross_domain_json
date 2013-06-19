@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>
+var request = 'https://raw.github.com/devsar/d3talk/master/flare.json'; //URL JSON
+$.getJSON('proxy.php?request=' + escape(request) , function(data) {
+ console.log(data);
+ //do something amazing with data !
+});
+
+</script>
+</body>
+<p>Para ver el resultado: En Google Chrome > Clic derecho > Inspeccionar Elemento > Consola</p><br>
+<p>To see the result: In Google Chrome > Right clic > Inspect Element > Console</p><br>
+</html>
